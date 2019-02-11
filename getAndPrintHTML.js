@@ -20,7 +20,7 @@ function getAndPrintHTML () {
   https.get(requestOptions, function (response) {
 
       // Check server response via HTTP status code
-        //If server response anything other than '200 OK' print to standard output error type
+        //If server response anything other than '200 OK' print to standard output the http status code
       if (response.statusCode !== 200) {
           console.log('Error status code: ' + response.statusCode);
           return;
