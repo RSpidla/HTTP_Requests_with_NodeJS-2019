@@ -6,7 +6,7 @@ function getHTML (options, callback) {
 
 /* Add your code here */
 
-var options = requestOptions;
+let options = requestOptions;
 
   // Make https request - function needs to accept 'options' parameter
   https.get(options, function (response) {
@@ -37,7 +37,7 @@ var options = requestOptions;
 
   });
 
-}
+};
   
 // Initialize variable and set node https module options
   // Option 1 - URL
@@ -52,4 +52,4 @@ getHTML(requestOptions, printHTML);
 
 function printHTML (html) {
   console.log(html);
-}
+};
